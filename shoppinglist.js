@@ -14,9 +14,19 @@ var shoppingList = [
    
  ];
 
-shoppingList.forEach(function(food) {
-	console.log(food.name + " $" + food.price)
+var itemTotal = 0
+
+shoppingList.forEach(function(list) {
+	console.log(list.name + " $" + list.price)
 });
+
+shoppingList.forEach(function(getTotal) {
+  itemTotal += getTotal.price
+});
+
+console.log("Total: " + "$" + itemTotal);
+
+/*Using for loop:
 
 function totalPrice() {
 	var itemTotal = 0;
@@ -26,4 +36,5 @@ function totalPrice() {
    return itemTotal;
 }
 
-console.log("Total: $" + totalPrice());
+console.log("Total: $" + totalPrice());*/
+
