@@ -1,30 +1,30 @@
 var shoppingList = [
 	
 	{	name: "milk",
-		price: 3
+		price: 3.49
 	},
 	
 	{	name: "bread",
-		price: 2
+		price: 2.99
 	},
 	
     {  name: "apples",
-		price: 5
+		price: 4.37
 	}
    
  ];
 
-var itemTotal = 0
+var itemTotal = 0;
 
 shoppingList.forEach(function(list) {
-	console.log(list.name + " $" + list.price)
+	console.log(list.name + " $" + list.price.toFixed(2))
 });
 
 shoppingList.forEach(function(getTotal) {
   itemTotal += getTotal.price
 });
 
-console.log("Total: " + "$" + itemTotal);
+console.log("Total: " + "$" + itemTotal.toFixed(2));
 
 /*Using for loop:
 
